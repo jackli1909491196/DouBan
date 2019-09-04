@@ -28,7 +28,6 @@ body{
 	flex-direction: column; */
 }
 img{
-	display: block;
 	border: none;
 }
 a{

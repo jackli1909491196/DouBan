@@ -3,8 +3,8 @@
     <header-bar></header-bar>
     <nav-title></nav-title>
     <div v-for="(v,i) in arr" :key="i">
-      <router-link to="/shoplist"> 
-      <news-list :newsTitle="v.title" :newsCon="v.title" :newsImg="v.image" :newsType="v.category_name"></news-list>
+      <router-link :to="{path:'/shoplist',query:{id:v.id}}"> 
+        <news-list :newsTitle="v.title" :newsCon="v.title" :newsImg="v.image" :newsType="v.category_name"></news-list>
       </router-link>
     </div>
   </div>
@@ -29,7 +29,7 @@ export default {
     this.axios({
       method: "get",
       url: "/homelist"
-    }).then(ok => {
+    }).then((ok) => {
       // console.log(ok.data.shouye);
       this.arr = ok.data.shouye;
     });

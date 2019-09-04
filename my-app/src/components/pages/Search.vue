@@ -1,12 +1,16 @@
 <template>
   <div>
-    <h1>搜索</h1>
+    <search-title></search-title>
+    <search-con></search-con>
   </div>
 </template>
 <script>
+import SearchTitle from '../search/SearchTitle'
+import SearchCon from '../search/SearchCon'
 export default {
   components:{
-   
+   SearchTitle,
+   SearchCon
   }
 };
 </script>
