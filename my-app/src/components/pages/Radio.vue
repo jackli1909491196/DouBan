@@ -1,14 +1,22 @@
 <template>
   <div>
     <header-bar></header-bar>
-     <h1>广播</h1>
+    <banner></banner>
+    <please-login></please-login>
+    <download></download>
   </div>
 </template>
 <script>
 import HeaderBar from "../publics/HeaderBar";
+import Banner from '../publics/Banner';
+import PleaseLogin from '../publics/PleaseLogin';
+import Download from '../publics/Download'
 export default {
   components:{
-   HeaderBar
+   HeaderBar,
+   Banner,
+   PleaseLogin,
+   Download
   }
 };
 </script>
