@@ -41,6 +41,7 @@ export default {};
   background-color: #ffffff;
   font-size: 0.16rem;
   border-bottom: 0.01rem solid #f3f3f3;
+  z-index: 10;
 }
 .header span a {
   font-size: 0.24rem;

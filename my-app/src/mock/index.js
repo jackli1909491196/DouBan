@@ -5,3 +5,4 @@ Mock.mock("/movie","get",require("./json/movie.json"));
 Mock.mock("/findmovie","get",require("./json/findmovie.json"));
 Mock.mock("/book","get",require("./json/book.json"));
 Mock.mock("/findbook","get",require("./json/findbook.json"));
+Mock.mock("/group","get",require("./json/group.json"));

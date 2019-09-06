@@ -6,17 +6,21 @@
     </div>
     <div class="listCon">
       <div class="list" v-for="(v,i) in items" :key="i">
-        <router-link to="">
+        <router-link to="/moviedetails">
           <img :src="v.images.large" alt />
           <p>{{v.title}}</p>
+          <five-star :values="v.rating.average"></five-star>
         </router-link>
       </div>
     </div>
   </div>
 </template>
 <script>
+import FiveStar from "./FiveStar";
 export default {
-  components: {},
+  components: {
+    FiveStar
+  },
   props: {
     items: {
       type: Array,
@@ -57,6 +61,7 @@ export default {
   width: 100%;
   display: flex;
   overflow-x: auto;
+  padding-bottom: 0.1rem;
 }
 .list {
   width: 0.9rem;
@@ -65,12 +70,17 @@ export default {
 .list img {
   display: block;
   width: 0.9rem;
-  height: 1.2rem;
+  height: 1.1rem;
 }
 .list p {
+  width: 100%;
   font-size: 0.16rem;
   color: #111;
   text-align: center;
   padding: 0.1rem 0;
+  line-height: 0.16rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>

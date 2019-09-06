@@ -1,12 +1,17 @@
 <template>
   <div class="con">
-    <span>关闭</span>
+    <span @click="fun()">关闭</span>
     <input type="text" />
   </div>
 </template>
 <script>
 export default {
-  components: {}
+  components: {},
+  methods: {
+    fun() {
+      this.$router.go(-1);
+    }
+  }
 };
 </script>
 

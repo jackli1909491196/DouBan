@@ -9,12 +9,12 @@ import Radio from '../components/pages/Radio'
 import Group from '../components/pages/Group'
 import Search from '../components/pages/Search'
 import ShopList from '../components/pages/ShopList'
+import MovieDetails from '../components/pages/MovieDetails'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/reg',
       name: 'Reg',
       component: Reg
@@ -58,6 +58,11 @@ export default new Router({
       path: '/shoplist',
       name: 'ShopList',
       component: ShopList
+    },
+    {
+      path: '/movieDetails',
+      name: 'MovieDetails',
+      component: MovieDetails
     },
   ]
 })

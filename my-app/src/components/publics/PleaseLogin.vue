@@ -1,15 +1,17 @@
 <template>
   <div class="con">
-    <div class="avatar">
-      <img src="../../../static/img/user.jpg" alt />
-    </div>
-    <div class="pleaseLogin">请先登录</div>
-    <div class="cam">
-      <img src="../../../static/img/cam.jpg" alt />
-    </div>
-    <div class="pen">
-      <img src="../../../static/img/pen.jpg" alt />
-    </div>
+    <router-link to="/login">
+      <div class="avatar">
+        <img src="../../../static/img/user.jpg" alt />
+      </div>
+      <div class="pleaseLogin">请先登录</div>
+      <div class="cam">
+        <img src="../../../static/img/cam.jpg" alt />
+      </div>
+      <div class="pen">
+        <img src="../../../static/img/pen.jpg" alt />
+      </div>
+    </router-link>
   </div>
 </template>
 <script>
@@ -58,14 +60,14 @@ export default {
   float: right;
   box-sizing: border-box;
 }
-.pen img{
-    width: 0.34rem;
-    height: 0.34rem;
-    margin: 0 auto;
-} 
-.cam img{
-    width: 0.34rem;
-    height: 0.34rem;
-    margin: 0 auto;
-} 
+.pen img {
+  width: 0.34rem;
+  height: 0.34rem;
+  margin: 0 auto;
+}
+.cam img {
+  width: 0.34rem;
+  height: 0.34rem;
+  margin: 0 auto;
+}
 </style>

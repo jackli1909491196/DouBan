@@ -2,7 +2,7 @@
   <div class="con">
     <div class="title">
       <span>
-        <a href="#">取消</a>
+        <a href="#" @click="funl()">取消</a>
       </span>
       <strong>登录豆瓣</strong>
     </div>
@@ -42,6 +42,9 @@ export default {
         console.log(err);
         alert("登录失败");
       })
+    },
+    funl(){
+      this.$router.go(-1);
     }
   }
 };

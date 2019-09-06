@@ -1,10 +1,13 @@
 <template>
   <div>
     <header-bar></header-bar>
-    <div class="shopNav">
-      <shop-nav-list :items="arr1" bigTitle="影院热映"></shop-nav-list>
-      <shop-nav-list :items="arr2" bigTitle="免费在线观影"></shop-nav-list>
-      <shop-nav-list :items="arr3" bigTitle="新片速递"></shop-nav-list>
+    <div class="loadImg" v-if="arrs.length<=0">
+      <img src="../../../static/img/loading.gif" alt />
+    </div>
+    <div class="shopNav" v-else>
+      <shop-nav-list :items="arr1" bigTitle="最受关注图书｜虚构类"></shop-nav-list>
+      <shop-nav-list :items="arr2" bigTitle="最受关注图书｜非虚构类"></shop-nav-list>
+      <shop-nav-list :items="arr3" bigTitle="豆瓣纸书"></shop-nav-list>
     </div>
     <nav-list :arr="arrsf"></nav-list>
     <list-look></list-look>
@@ -14,9 +17,9 @@
 <script>
 import HeaderBar from "../publics/HeaderBar";
 import ShopNavList from "../publics/ShopNavList";
-import NavList from '../publics/NavList';
-import ListLook from '../publics/ListLook'
-import Download from '../publics/Download';
+import NavList from "../publics/NavList";
+import ListLook from "../publics/ListLook";
+import Download from "../publics/Download";
 export default {
   components: {
     HeaderBar,
@@ -31,7 +34,7 @@ export default {
       arr1: [],
       arr2: [],
       arr3: [],
-      arrsf:[]
+      arrsf: []
     };
   },
   created() {
@@ -74,5 +77,16 @@ export default {
 <style scoped>
 div .shopNav {
   padding-top: 0.48rem;
+}
+.loadImg {
+  overflow: hidden;
+  padding-top: 0.68rem;
+  padding-bottom: 0.2rem;
+}
+.loadImg img {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0 auto;
 }
 </style>
