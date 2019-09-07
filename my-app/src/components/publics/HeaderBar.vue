@@ -80,4 +80,8 @@ export default {};
 .searchImg{
   margin-left: 0.05rem;
 }
+.searchImg img{
+  width: 0.3rem;
+  height: 0.3rem;
+}
 </style>

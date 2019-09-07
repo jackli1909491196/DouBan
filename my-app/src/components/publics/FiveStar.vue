@@ -31,7 +31,7 @@ computed: {
 </script>
 <style>
 .el-rate__icon {
-    font-size: 0.12rem;
-    margin-right: 0;
+    font-size: 0.12rem !important;
+    margin-right: 0 !important;
 }
 </style>

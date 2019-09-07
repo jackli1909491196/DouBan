@@ -2,7 +2,7 @@
   <div>
     <header-bar></header-bar>
     <div class="loadImg" v-if="arrs.length<=0">
-      <img src="../../../static/img/loading.gif" alt />
+      <img src="../../static/img/loading.gif" alt />
     </div>
     <div class="shopNav" v-else>
       <shop-nav-list :items="arr1" bigTitle="最受关注图书｜虚构类"></shop-nav-list>
@@ -15,11 +15,11 @@
   </div>
 </template>
 <script>
-import HeaderBar from "../publics/HeaderBar";
-import ShopNavList from "../publics/ShopNavList";
-import NavList from "../publics/NavList";
-import ListLook from "../publics/ListLook";
-import Download from "../publics/Download";
+import HeaderBar from "../components/publics/HeaderBar";
+import ShopNavList from "../components/publics/ShopNavList";
+import NavList from "../components/publics/NavList";
+import ListLook from "../components/publics/ListLook";
+import Download from "../components/publics/Download";
 export default {
   components: {
     HeaderBar,

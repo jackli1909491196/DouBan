@@ -25,26 +25,26 @@ export default {
   methods: {
     fun() {
       // 得到输入框的值
-      var userEmail = document.getElementById("userEmail").value;
-      var userPass = document.getElementById("userPass").value;
-      var param=new URLSearchParams;
-      param.append("userEmail",userEmail);
-      param.append("userPass",userPass);
-      this.axios({
-        url:"http://localhost:3000/login",
-        method:"post",
-        data:param
-      }).then((ok)=>{
-        console.log(ok);
+      // var userEmail = document.getElementById("userEmail").value;
+      // var userPass = document.getElementById("userPass").value;
+      // var param=new URLSearchParams;
+      // param.append("userEmail",userEmail);
+      // param.append("userPass",userPass);
+      // this.axios({
+      //   url:"http://localhost:3000/login",
+      //   method:"post",
+      //   data:param
+      // }).then((ok)=>{
+      //   console.log(ok);
         alert("登录成功");
         this.$router.push("/home");
-      },(err)=>{
-        console.log(err);
-        alert("登录失败");
-      })
-    },
-    funl(){
-      this.$router.go(-1);
+  //     },(err)=>{
+  //       console.log(err);
+  //       alert("登录失败");
+  //     })
+  //   },
+  //   funl(){
+  //     this.$router.go(-1);
     }
   }
 };

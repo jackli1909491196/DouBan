@@ -59,8 +59,7 @@
     </div>
     <div class="describe">
       <h3>活动详情</h3>
-      <div class="content">
-        {{content}}
+      <div class="content" v-html="content">
       </div>
     </div>
   </div>

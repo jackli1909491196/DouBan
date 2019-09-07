@@ -2,10 +2,10 @@
   <div>
     <ul>
       <li>
-        <router-link to>影院热映</router-link>
+        <router-link to="/movie">影院热映</router-link>
       </li>
       <li>
-        <router-link to>欧美新碟榜</router-link>
+        <router-link to="/movie">欧美新碟榜</router-link>
       </li>
       <li>
         <router-link to="/reg">注册帐号</router-link>

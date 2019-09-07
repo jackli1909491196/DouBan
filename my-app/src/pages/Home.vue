@@ -3,7 +3,7 @@
     <header-bar></header-bar>
     <nav-title></nav-title>
     <div class="loadImg" v-if="arr.length<=0">
-      <img src="../../../static/img/loading.gif" alt />
+      <img src="../../static/img/loading.gif" alt />
     </div>
     <div v-else>
       <div v-for="(v,i) in arr" :key="i">
@@ -20,9 +20,9 @@
   </div>
 </template>
 <script>
-import HeaderBar from "../publics/HeaderBar";
-import NavTitle from "../home/NavTitle";
-import NewsList from "../home/NewsList";
+import HeaderBar from "../components/publics/HeaderBar";
+import NavTitle from "../components/home/NavTitle";
+import NewsList from "../components/home/NewsList";
 export default {
   components: {
     HeaderBar,

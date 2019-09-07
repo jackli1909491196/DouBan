@@ -19,26 +19,26 @@
 export default {
   methods: {
     fun() {
-        var userEmail = document.getElementById("userEmail").value;
-      var userPass = document.getElementById("userPass").value;
-      var userName = document.getElementById("userName").value;
-    console.log(userEmail + "---" + userPass + "---" + userName);
-      this.axios({
-        url:"http://localhost:3000/reg",
-        method:"get",
-        params:{
-          userEmail,
-          userPass,
-          userName
-        }
-      }).then((ok)=>{
-           console.log(ok);
+    //     var userEmail = document.getElementById("userEmail").value;
+    //   var userPass = document.getElementById("userPass").value;
+    //   var userName = document.getElementById("userName").value;
+    // console.log(userEmail + "---" + userPass + "---" + userName);
+    //   this.axios({
+    //     url:"http://localhost:3000/reg",
+    //     method:"get",
+    //     params:{
+    //       userEmail,
+    //       userPass,
+    //       userName
+    //     }
+    //   }).then((ok)=>{
+    //        console.log(ok);
         alert("注册成功");
         this.$router.push("/login");
-      },(err)=>{
-        console.log(err);
-        alert("注册失败");
-      })
+    //   },(err)=>{
+        // console.log(err);
+        // alert("注册失败");
+      // })
     }
   }
 };

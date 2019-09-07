@@ -15,11 +15,11 @@
   </div>
 </template>
 <script>
-import HeaderBar from "../publics/HeaderBar";
-import Banner from "../publics/Banner";
-import PleaseLogin from "../publics/PleaseLogin";
-import Download from "../publics/Download";
-import RadioCon from "../radio/RadioCon";
+import HeaderBar from "../components/publics/HeaderBar";
+import Banner from "../components/publics/Banner";
+import PleaseLogin from "../components/publics/PleaseLogin";
+import Download from "../components/publics/Download";
+import RadioCon from "../components/radio/RadioCon";
 export default {
   components: {
     HeaderBar,

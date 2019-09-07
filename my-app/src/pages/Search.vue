@@ -5,8 +5,8 @@
   </div>
 </template>
 <script>
-import SearchTitle from '../search/SearchTitle'
-import SearchCon from '../search/SearchCon'
+import SearchTitle from '../components/search/SearchTitle'
+import SearchCon from '../components/search/SearchCon'
 export default {
   components:{
    SearchTitle,

@@ -9,10 +9,10 @@
   </div>
 </template>
 <script>
-import HeaderBar from "../publics/HeaderBar";
-import Banner from "../publics/Banner";
-import ShopDetails from "../home/ShopDetails";
-import Download from '../publics/Download'
+import HeaderBar from "../components/publics/HeaderBar";
+import Banner from "../components/publics/Banner";
+import ShopDetails from "../components/home/ShopDetails";
+import Download from '../components/publics/Download'
 export default {
   components: {
     HeaderBar,

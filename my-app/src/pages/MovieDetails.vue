@@ -7,10 +7,10 @@
   </div>
 </template>
 <script>
-import HeaderBar from "../publics/HeaderBar";
-import Banner from '../publics/Banner'
-import NavList from "../publics/NavList";
-import Download from "../publics/Download";
+import HeaderBar from "../components/publics/HeaderBar";
+import Banner from '../components/publics/Banner'
+import NavList from "../components/publics/NavList";
+import Download from "../components/publics/Download";
 export default {
   components: {
     HeaderBar,

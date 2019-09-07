@@ -13,10 +13,10 @@
   </div>
 </template>
 <script>
-import HeaderBar from "../publics/HeaderBar";
-import PleaseLogin from "../publics/PleaseLogin";
-import GroupList from "../group/GroupList";
-import Download from "../publics/Download";
+import HeaderBar from "../components/publics/HeaderBar";
+import PleaseLogin from "../components/publics/PleaseLogin";
+import GroupList from "../components/group/GroupList";
+import Download from "../components/publics/Download";
 export default {
   components: {
     HeaderBar,
